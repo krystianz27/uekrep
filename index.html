@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UEK KIERUNKI</title>
+    <!-- Bootstrap 5 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEJQ3E5zY6kF6s2Xb06kCXjXP42y5i5r5Xk6cq5j2lk5Xl5j2K5qFqFq25c5w"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* Upewniamy się, że obrazy w karuzeli są responsywne */
+      .carousel-item img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+      }
+
+      /* Ukrywamy przewijanie w poziomie */
+      body {
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Container-fluid zapewnia pełną szerokość z minimalnymi marginesami -->
+    <div class="container-fluid px-0 my-5">
+      <!-- Title and University -->
+      <header class="text-center mb-4">
+        <h1 class="display-4">
+          KIERUNKI STUDIÓW NA UNIWERSYTECIE EKONOMICZNYM W KRAKOWIE
+        </h1>
+        <h3>Uniwersytet Ekonomiczny w Krakowie</h3>
+      </header>
+
+      <!-- About University -->
+      <section class="mb-4">
+        <p>
+          Uniwersytet Ekonomiczny w Krakowie to jedna z wiodących uczelni w
+          Polsce, oferująca szeroki zakres kierunków studiów związanych z
+          ekonomią, zarządzaniem oraz naukami społecznymi. Uczelnia kształci
+          studentów w różnych dziedzinach, przygotowując ich do pracy w kraju i
+          za granicą. Więcej informacji można znaleźć na stronie
+          <a
+            href="https://pl.wikipedia.org/wiki/Uniwersytet_Ekonomiczny_w_Krakowie"
+            target="_blank"
+            >Uniwersytet Ekonomiczny w Krakowie (Wikipedia)</a
+          >.
+        </p>
+      </section>
+
+      <!-- Carousel -->
+      <section class="mb-4">
+        <div
+          id="carouselExample"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://example.com/uczelnia1.jpg"
+                class="d-block w-100"
+                alt="Zdjęcie 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://example.com/uczelnia2.jpg"
+                class="d-block w-100"
+                alt="Zdjęcie 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://example.com/uczelnia3.jpg"
+                class="d-block w-100"
+                alt="Zdjęcie 3"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Study Programs -->
+      <section class="row">
+        <div class="col-12 col-md-4 mb-4">
+          <h4>Kierunek 1: Ekonomia</h4>
+          <p>
+            Ekonomia to jeden z najbardziej popularnych kierunków studiów na
+            Uniwersytecie Ekonomicznym. Program nauczania obejmuje zagadnienia
+            związane z mikro- i makroekonomią, analizą rynku oraz finansami.
+            Studenci uczą się o zasadach funkcjonowania gospodarki, organizacji
+            przedsiębiorstw oraz strategiach zarządzania.
+          </p>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <h4>Kierunek 2: Zarządzanie</h4>
+          <p>
+            Kierunek Zarządzanie przygotowuje studentów do pracy w roli liderów
+            i menedżerów w różnych branżach. Program obejmuje m.in. zarządzanie
+            projektami, strategie marketingowe, organizację procesów biznesowych
+            oraz techniki negocjacyjne. Absolwenci tego kierunku są gotowi do
+            podejmowania wyzwań w dynamicznie zmieniającym się świecie biznesu.
+          </p>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <h4>Kierunek 3: Informatyka w biznesie</h4>
+          <p>
+            Informatyka w biznesie to interdyscyplinarny kierunek, który łączy
+            zagadnienia z zakresu IT i zarządzania. Studenci uczą się o
+            systemach informacyjnych, bazach danych, a także technologiach
+            wykorzystywanych w zarządzaniu przedsiębiorstwami. Program obejmuje
+            również analizę i projektowanie oprogramowania oraz kwestie związane
+            z bezpieczeństwem IT.
+          </p>
+        </div>
+      </section>
+
+      <!-- Registration Form -->
+      <section>
+        <h3 class="text-center mb-4">Formularz Rejestracji na Studia</h3>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Imię i Nazwisko</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Wpisz imię i nazwisko"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Wpisz email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Rodzaj Studiów</label>
+            <div>
+              <input
+                type="radio"
+                id="stacjonarne"
+                name="studia"
+                value="stacjonarne"
+                checked
+              />
+              <label for="stacjonarne">Studia Stacjonarne</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="niestacjonarne"
+                name="studia"
+                value="niestacjonarne"
+              />
+              <label for="niestacjonarne">Studia Niestacjonarne</label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="direction" class="form-label">Kierunek Studiów</label>
+            <select class="form-select" id="direction" required>
+              <option value="">Wybierz kierunek</option>
+              <option value="ekonomia">Ekonomia</option>
+              <option value="zarzadzanie">Zarządzanie</option>
+              <option value="informatyka">Informatyka w biznesie</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="comments" class="form-label">Uwagi</label>
+            <textarea
+              class="form-control"
+              id="comments"
+              rows="3"
+              placeholder="Wpisz uwagi"
+            ></textarea>
+          </div>
+          <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary">Zarejestruj</button>
+            <button type="button" class="btn btn-secondary">Anuluj</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <!-- Bootstrap JS & Popper.js CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz4fnFO9gyb5Zg6kZPITv6km9bq0c6+zDx6bOXlfkqPfcF7A3hAmA9ONZT"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-pzjw8f+ua7Kw1TIq0+2Y7s0DAwRacxzmDx2HlT7hjZaI8+Zk2x3Bvo0FHGcZ7n9e"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
